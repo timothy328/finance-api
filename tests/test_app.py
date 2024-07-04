@@ -1,5 +1,10 @@
 import pytest
-from app.app import get_random_decimal, multiply_and_add_json
+import os
+
+current_dir = os.getcwd()
+print('HI', current_dir)
+# from app import get_random_decimal, multiply_and_add_json
+from app import *
 
 def test_random_decimal_output_type():
   """Test that random_decimal returns a float."""
