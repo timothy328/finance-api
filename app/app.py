@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, render_template
+from app.app import Flask, jsonify, request, render_template
 import random
 
 app = Flask(__name__)
@@ -24,13 +24,13 @@ def get_random_decimal():
 def multiply_and_add_json():
   """API endpoint for multiply_and_add function using JSON data."""
   data = request.get_json()  # Get JSON data from request body
-#   x = data.get('x')
-#   y = data.get('y')
-#   z = data.get('z')
+  x = data.get('x')
+  y = data.get('y')
+  z = data.get('z')
   
-  x = float(request.form['x'])  # Access form data by key
-  y = float(request.form['y'])
-  z = float(request.form['z'])
+  # x = float(request.form['x'])  # Access form data by key
+  # y = float(request.form['y'])
+  # z = float(request.form['z'])
   
   # Error handling (optional)
   if not all([x, y, z]):
