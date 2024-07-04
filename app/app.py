@@ -48,3 +48,10 @@ def show_form():
 
 if __name__ == '__main__':
   app.run(debug=True)
+
+
+# Use GET for retrieving data.
+# Use POST for creating new resources.
+# Use PUT for complete updates or replacements.
+# Use PATCH for partial updates.
+# Use DELETE for removing resources.
