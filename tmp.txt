@@ -1,0 +1,8 @@
+To-do list: 
+
+- Unit test don't work (cannot find app)
+- 3 arg func doesn't work in the browser
+- Docker?
+- Get yfinance data
+- Enhance CICD pipeline
+
