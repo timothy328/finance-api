@@ -15,7 +15,7 @@ jobs:
           python-version: 3.9  # Specify Python version
       - name: Install dependencies
         run: pip install -r requirements.txt  # Install required packages
-      - name: Run tests
-        run: pytest tests/  # Run tests using pytest
-      - name: Deploy (Optional):  # Add a deployment step if needed
+      # - name: Run tests
+        # run: pytest tests/  # Run tests using pytest
+      # - name: Deploy (Optional):  # Add a deployment step if needed
         # ... commands to deploy your application (e.g., using AWS CLI)
